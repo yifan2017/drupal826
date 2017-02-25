@@ -1,0 +1,428 @@
+@charset "UTF-8";
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666;
+}
+
+a:focus{
+    outline: none;
+}
+
+#navbar-collapse ul{
+    margin-top:0;
+}
+
+.nav-pills{width: 150px;}
+.nav-pills.affix{top:30px;}
+
+/*轮播器距顶距离*/
+#myCarouse{
+    margin-top: 50px;
+}
+/*轮播器图片居中*/
+.carousel-inner img{
+    margin: 0 auto;
+}
+
+
+/*.carousel-control{*/
+    /*font-size: 100px;*/
+/*}*/
+
+/*脚本生成区*/
+#script_info{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    line-height: 2;
+}
+
+
+#script_info h1{
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+#script_info h4{
+    font-size: 16px;
+    font-weight: 200;
+    color: #d9534f;
+}
+
+#moveNpc{
+    margin-bottom: 30px;
+}
+#monitem{
+    margin-bottom: 30px;
+    padding-top:30px;
+    border-top:1px dashed #2E962D;
+}
+
+#code_area{
+    padding-top: 20px;
+    border-top:1px dashed #2E962D;
+}
+/*错误提示框*/
+#error_info{
+    margin-top: 10px;
+    padding: 20px;
+}
+
+/*复制代码按钮*/
+.copy_code{
+    padding: 5px;
+}
+
+/*服务器列表*/
+#server_list{
+    line-height: 33px;
+    padding-top: 40px;
+    background-color: #eee;
+}
+
+.server_panel{
+    margin-top:40px;
+}
+
+.server_title{
+    padding: 25px;
+    color: #fff;
+
+}
+
+.bg_yellow{
+    background-color: #E87902;
+}
+.bg_green{
+    background-color: #5CCE00;
+}
+
+.bg_red{
+    background-color: #EA1D24;
+}
+.server_title h4 {
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*服务器配置展示*/
+.server_info{
+    padding: 20px;
+    border-top:1px solid #ccc;
+}
+.server_desc{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*价格*/
+.price{
+    color: #ff5a00;
+    font-size: 34px;
+
+}
+
+.server_footer{
+    background-color: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*首页上部字体*/
+.tab1{
+    margin: 30px 0;
+}
+.tab-h2{
+    font-size: 16px;
+    color: #0059b2;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.tab-p{
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin:20px 0 40px 0;
+}
+
+.tab1 .text-muted{
+    color: #999;
+    text-decoration: line-through;
+}
+
+.tab1 .media-heading{
+    margin: 5px 0 20px;
+}
+.tab1 .col{
+    padding: 30px;
+}
+
+/*首页中下1*/
+.tab2{
+    background-color: #eee;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.tab2 img {
+    width: 40%;
+    height: 40%;
+}
+.tab3{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.tab3 img {
+    width: 60%;
+    height: 60%;
+}
+
+.text h3{
+    font-size: 20px;
+}
+
+.text p{
+    font-size: 14px;
+}
+/*首页底部*/
+#footer{
+    color: #eee;
+    background-color: #666;
+    padding: 20px;
+    text-align: center;
+    border-top:1px solid #ccc;
+}
+
+/*信息页中间横幅*/
+.jumbotron{
+    color: #FFF;
+    background-color: #2E962D;
+    margin: 50px 0 0 0;
+    padding: 100px 0;
+}
+
+
+.jumbotron h1{
+    font-size: 22px;
+    padding: 0 0 0 20px;
+    text-shadow: -5px 5px 0 rgba(0,0,0,0.1)
+}
+
+
+.jumbotron .container p{
+    font-size: 16px;
+    color: #f4f4f4;
+    font-weight: 200;
+    line-height: 1.4;
+    /*text-shadow: -5px 5px 0 rgba(0,0,0,0.1)*/
+}
+
+/*教程业中间介绍*/
+#video_info{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    line-height: 2;
+}
+
+#video_info h1 {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+#video_info h4 {
+    font-size: 16px;
+}
+
+/*教程标签页-介绍*/
+#introduce{
+    margin-top: 18px;
+    margin-bottom: 100px;
+}
+
+#introduce p{
+    font-size: 14px;
+    line-height: 200%;
+}
+
+/*教程标签页-列表*/
+#view {
+    margin-bottom: 100px;
+}
+
+#view li:first-child{
+    border-top: none;
+}
+
+/*教程标签页-下载*/
+#download {
+    margin-top: 18px;
+    margin-bottom: 100px;
+}
+
+#download p{
+    font-size: 14px;
+    line-height: 200%;
+}
+
+/*扫一扫*/
+#pay {
+    padding-top: 15px;
+}
+
+#pay h4{
+    font-size: 16px;
+
+    margin-top: 35px;
+}
+#pay p{
+    padding-top: 10px;
+}
+
+
+/*关于*/
+#about_jumb{
+    padding-top: 153px;
+    padding-bottom: 153px;
+}
+
+
+
+
+/*关于页面*/
+#about{
+    background-color: #eee;
+    padding: 40px 15px;
+}
+
+#about a{
+    color: #0059b2;
+}
+
+
+.about{
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #ccc;
+}
+
+#about p{
+    font-size: 13px;
+    line-height: 2;
+}
+
+#about h3{
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    margin: 0 0 10px 0;
+}
+
+/*客服*/
+/*#online{*/
+    /*position: fixed;*/
+    /*left:100%;*/
+    /*top:50%;*/
+/*}*/
+
+/*小屏幕平板,大于768px*/
+@media (min-width: 768px) {
+    .tab-h2{font-size: 26px;}
+    .tab-p{font-size: 16px;}
+    .text h3{ font-size: 22px; }
+    .text p{  font-size: 15px;  }
+    .tab2-text{float:left;}
+    .tab2-img{float:right;}
+    .jumbotron h1{  font-size: 30px; padding: 0 0 0 20px;}
+    .jumbotron h4{  font-size: 16px; padding: 0 0 0 20px;}
+    .info_content{ margin: 0 0 20px 0;}
+    .info_content h4{ font-size: 16px;}
+    #about p{ font-size: 14px; }
+    #about h3{  font-size: 19px; }
+    .server_title h4 {  font-size: 19px;  }
+    .price{font-size: 36px;  }
+    .jumbotron h1 {font-size: 34px; }
+    .jumbotron .container p { font-size: 18px; }
+    #video_info h1 {  font-size: 28px;  }
+}
+
+/*中等屏幕显示器,大于992px*/
+@media (min-width: 992px) {
+    .tab-h2 {
+        font-size: 28px;
+    }
+
+    .tab-p {
+        font-size: 17px;
+    }
+
+    .text h3 {
+        font-size: 24px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .jumbotron h1 {
+        font-size: 33px;
+        padding: 0 0 0 20px;
+    }
+
+    .jumbotron h4 {
+        font-size: 17px;
+        padding: 0 0 0 20px;
+    }
+
+    .info_content h4 {
+        font-size: 18px;
+    }
+
+    #about p {
+        font-size: 15px;
+    }
+
+    #about h3 {
+        font-size: 20px;
+    }
+
+    .server_title h4 {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 38px;
+    }
+
+    .jumbotron h1 {
+        font-size: 36px;
+    }
+
+    .jumbotron .container p { font-size: 22px; }
+    #video_info h1 {  font-size: 34px; font-weight: 200; }
+}
+
+/*大屏幕桌面显示器,大于1200px*/
+@media (min-width: 1200px) {
+    .tab-h2{font-size: 30px;}
+    .tab-p{font-size: 18px;}
+    .text h3{ font-size: 26px; }
+    .text p{  font-size: 18px;  }
+    .jumbotron h1{  font-size: 36px; padding: 0 0 0 20px;}
+    .jumbotron h4{  font-size: 18px; padding: 0 0 0 20px;}
+    .info_content h4{ font-size: 20px;}
+    #about p{ font-size: 16px; }
+    #about h3{  font-size: 22px; }
+    .server_title h4 {  font-size: 22px;  }
+    .price{font-size: 40px;  }
+    .jumbotron h1{  font-size: 36px;  }
+    .jumbotron .container p { font-size: 22px; }
+    #video_info h1 {  font-size: 36px; font-weight: 200; }
+}
+
+

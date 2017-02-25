@@ -1,0 +1,22 @@
+name: bootstrap_ttgame
+type: theme
+description: '服务器网站基于bootstrap主题'
+
+version: VERSION
+core: 8.x
+
+libraries:
+  - bootstrap_ttgame/global-styling
+
+
+regions:
+  logo: Logo
+  menu: 菜单
+  slide_show: 轮播
+  server: 服务器
+  content: 内容
+  why_choice: 天心数据广告
+  static_ad: 教学广告
+  static_group: 教学交流群说明
+  footer_link: 底部链接
+

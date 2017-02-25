@@ -1,0 +1,10 @@
+global-styling:
+  version: VERSION
+  css:
+      theme:
+             plugin/bootstrap/css/bootstrap.css: {}
+             css/style.css: {}
+  js:
+        js/jquery.min.js: {}
+        plugin/bootstrap/js/bootstrap.min.js: {}
+        js/main.js: {}

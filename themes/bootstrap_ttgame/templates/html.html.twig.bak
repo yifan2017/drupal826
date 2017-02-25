@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        天心数据-高防稳定游戏服务器
+    </title>
+    <link  rel="stylesheet" href="./static/plugin/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+{{ page }}

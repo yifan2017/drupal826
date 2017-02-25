@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        天心数据-高防稳定游戏服务器
+    </title>
+    <link  rel="stylesheet" href="./static/plugin/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!--导航-->
+<nav class="nav-bar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="index.html" target="_blank"><img src="./static/image/logo.png" alt="天心数据服务器租用"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul  class="nav navbar-nav navbar-right">
+                <li class="active"><a href="/"><span class="glyphicon glyphicon-home "></span> 首 页</a></li>
+                <li><a href="video.html"><span class="glyphicon glyphicon-headphones"></span> 视频</a></li>
+                <li><a href="mir.html"><span class="glyphicon glyphicon-superscript"></span> 传奇脚本</a></li>
+                <li><a href="tencent://Message/?Uin=735520908&websiteName=www.ttgame.net=&Menu=yes" target="_blank"><span class="glyphicon glyphicon-user"></span> 联系客服</a></li>
+                <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!--轮播-->
+<div id="myCarouse" class="carousel slide" xmlns="http://www.w3.org/1999/html">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarouse" data-slide-to="0" ></li>
+        <li data-target="#myCarouse" data-slide-to="1"></li>
+        <li data-target="#myCarouse" data-slide-to="2" ></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active" style="background: #BB1F2D">
+            <img src="./static/image/slide1.gif" alt="第一张">
+            <div class="carousel-caption">
+                <h3 class="hidden-xs">CPU I5 内存8G 带宽G口</h3>
+            </div>
+        </div>
+        <div class="item" style="background: #e25a14"><img src="./static/image/slide2.gif" alt="第二张"></div>
+
+    </div>
+    <a href="#myCarouse" data-slide="prev" class="carousel-control left"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a href="#myCarouse" data-slide="next" class="carousel-control right"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<div id="script_info">
+        <h1 class="text-center script_h1">脚本生成  </h1>
+        <h4 class="text-center script_h4">快速生成传送,回收脚本.爆率.让重复的工作变得更加简单!  </h4>
+</div>
+<!-- 脚本生成 -->
+
+    <div class="container" id="create_script">
+        <form class="form-horizontal">
+            <!-- 生成爆率 -->
+            <div class="row" id="monitem">
+            <div class="col-md-2">
+                <select  id="rec_m2_type"  class="form-control">
+                    <option value="1">HERO引擎</option>
+		    <option value="2">LEG引擎</option>
+		    <option value="3">GOM引擎</option>
+                </select>
+            </div>
+            <!-- 爆率比率-->
+            <div class="col-md-3">
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">爆率 </span>
+                  <input type="text" name="proportion" class="form-control"  placeholder="概率,如:1/10" aria-describedby="basic-addon1">
+                </div>
+            </div>
+               <div class="col-md-2">
+                  <button type="button" class="btn btn-danger" onclick="monDrop();">生成爆率</button>
+             </div>
+        </div>
+
+            <!-- 传送员脚本 -->
+            <div class="row" id="moveNpc">
+
+                    <div class="col-md-2">
+			 <select  id="rec_m2_type"  class="form-control">
+	                    <option value="1">HERO引擎</option>
+			    <option value="2">LEG引擎</option>
+			    <option value="3">GOM引擎</option>
+	                </select>
+                    </div>
+                    <!-- 传送等级 -->
+                    <div class="col-md-3">
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon1">CheckLevel ></span>
+                          <input type="text" name="level" class="form-control" onfocus="clearError();" placeholder="需要等级,如:50" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <!-- 传送扣元宝 -->
+                     <div class="col-md-3">
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon1">GameGold -</span>
+                          <input type="text" name="needgold" class="form-control" placeholder="需要元宝数,如:10" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <!-- 等级限制 -->
+                    <div class="col-md-3">
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon1">地图编号</span>
+                          <input type="text" name="mapinfo" class="form-control" onfocus="clearError();" placeholder="如:3" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+
+                     <div class="col-md-1">
+                          <button type="button" class="btn btn-danger" onclick="createMove();">生成传送</button>
+                     </div>
+            </div>
+
+            <!-- 回收脚本 -->
+            <div class="row" id="recycleNpc">
+            <div class="col-md-2">
+               <select  id="rec_m2_type"  class="form-control">
+                    <option value="1">HERO引擎</option>
+		    <option value="2">LEG引擎</option>
+		    <option value="3">GOM引擎</option>
+                </select>
+            </div>
+            <!-- 回收加经验 -->
+            <div class="col-md-3">
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">ChangeExp + </span>
+                  <input type="text" name="exp" class="form-control" onfocus="clearError();" placeholder="回收的经验,如:1000" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <!-- 回收加元宝 -->
+             <div class="col-md-3">
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">GameGold + </span>
+                  <input type="text" name="gamegold" class="form-control" placeholder="回收给的元宝,如:10" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <!-- 自定义加 -->
+             <div class="col-md-3">
+                  <input type="text" name="customize" class="form-control" placeholder="自定义脚本,如:GAMEGIRD + 1000" aria-describedby="basic-addon1">
+             </div>
+             <div class="col-md-1">
+                  <button type="button" class="btn btn-danger" onclick=" createRecycle();">生成回收</button>
+             </div>
+        </div>
+
+            <!-- 错误提示 -->
+            <div class="row" id="error_info">
+            <div class="col-md-9">
+                <div class="alert alert-success alert-dismissible " id="error_msg"  role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <strong id="error_title">提示:</strong> <span id="error">生成回收脚本和爆率需要填写装备名称列表!</span>
+            </div>
+            </div>
+            <div class="col-md-3 text-center copy_code">
+                <button id="code_cp_btn" type="button" class="btn btn-success btn-lg" data-clipboard-target="code">复制生成代码</button>
+            </div>
+        </div>
+
+            <!--装备和代码区-->
+            <div class="row" id="code_area">
+                <div class="col-md-3">
+                    <textarea class="form-control" rows="30" placeholder="每行给我一件装备名称" name="gear"></textarea>
+                </div>
+                <div class="col-md-9">
+                    <textarea name="" id="code"  rows="30" class="form-control" placeholder="生成的脚本都在这!"></textarea>
+                </div>
+            </div>
+    </form>
+    </div>
+<!--首页上部份-->
+<div class="tab1">
+    <div class="container">
+        <h2 class="tab-h2">「为什么选择天心数据」</h2>
+        <p class="tab-p">2009成立，风雨7载，为您提供坚如磐石高防游戏服务器和最贴心的游戏培训！</p>
+        <div class="row">
+            <div class="col-md-6 col">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#"><img src="./static/image/tab1-1.png" class="media-object"> </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">课程内容</h4>
+                        <p class="text-muted">其他：教程缺乏条理,没有实战,纸上谈兵！</p>
+                        <p>我们：通俗易懂,服务器上演示,全面贴近生产环境！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#"><img src="./static/image/tab1-2.png" class="media-object"> </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">师资力量</h4>
+                        <p class="text-muted">其他：技术水平差一条虫的录制，没有实战和声音的培训教材！</p>
+                        <p>我们：8后实战经验.教程被电驴,各大论坛转载.0基础轻松上手！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#"><img src="./static/image/tab1-3.png" class="media-object"> </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">售后安排</h4>
+                        <p class="text-muted">其他：无法保证售后效率、服务乱收费现象严重！</p>
+                        <p>我们：保证急客户所忧、以最快速度处理问题、绝无二次乱收费！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#"><img src="./static/image/tab1-4.png" class="media-object"> </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">运维团队</h4>
+                        <p class="text-muted">其他：社会招聘的、技术水平参差不齐的销售客服！</p>
+                        <p>我们：经典丰富、熟悉游戏行业,技术windwos linux过硬运维！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--中间下部-->
+<div class="tab2">
+    <div class="container">
+        <div class="col-md-6 col-sm-6 tab2-img">
+            <img src="./static/image/tab2.png" class="auto img-responsive center-block">
+        </div>
+        <div class="text col-md-6 col-sm-6 tab2-text">
+            <h3>贴心手把手指导</h3>
+            <p>根据基础和实际情况,语音按排学习!提供练习的实战服务器</p>
+        </div>
+    </div>
+</div>
+
+<div class="tab3">
+    <div class="container">
+        <div class="col-md-6 col-sm-6">
+            <img src="./static/image/tab3.png" class="auto img-responsive center-block">
+        </div>
+        <div class="text col-md-6 col-sm-6 tab3-text">
+            <h3>专有交流群</h3>
+            <p>享受最新业界动态和资讯,同行成功经验交流.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div id="footer">
+    <div class="container">
+        <p>高防服务器 | 高防空间 | 咨询QQ：735520908</p>
+		<p>苏ICP备12025126号. © 2009-2016 天心数据
+		<script language="javascript" type="text/javascript" src="http://js.users.51.la/17670062.js"></script>
+		<noscript>
+			<a href="http://www.51.la/?17670062" target="_blank">
+			<img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/17670062.asp" style="border:none" />
+			</a>
+		</noscript>
+		Powered by Bootstrap.</p>
+    </div>
+</div>
+<script src="./static/js/jquery.min.js"></script>
+<script src="./static/plugin/bootstrap/js/bootstrap.min.js"></script>
+<script src="./static/plugin/zeroclipboard/ZeroClipboard.min.js"></script>
+<script src="./static/js/main.js"></script>
+<script src="./static/js/mir.js"></script>
+</body>
+</html>
+
+
+
