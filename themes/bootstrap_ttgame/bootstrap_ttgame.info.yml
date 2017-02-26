@@ -11,6 +11,7 @@ libraries:
 
 regions:
   logo: Logo
+  top_menu: 顶部导航
   menu: 菜单
   slide_show: 轮播
   server: 服务器

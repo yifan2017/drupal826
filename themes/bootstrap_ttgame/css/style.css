@@ -9,9 +9,39 @@ a:focus{
     outline: none;
 }
 
+/* 顶部导航注册登陆*/
+#top_menu {
+    width:100%;
+    height:26px;
+}
+
+#top_menu ul {
+    margin-bottom:0;
+}
+
+#top_menu li {
+    float:right;
+    list-style-type:none;
+}
+
+#top_menu_ul>li>a {
+    color:#319B31;
+    display:block;
+    margin-right:15px;
+    line-height:26px;
+    text-decoration:none;
+}
+
+#top_menu_ul>li>a:hover {
+    cursor:pointer;
+    color:#1F7C1F;
+}
+
+
 #navbar-collapse ul{
     margin-top:0;
 }
+
 
 .nav-pills{width: 150px;}
 .nav-pills.affix{top:30px;}
